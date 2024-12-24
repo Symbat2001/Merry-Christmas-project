@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", cursive;
+}
+
+body{
+    height: 2000px;
+}
+
+.snowy{
+    position: absolute;
+    top: -10px;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+
+header{
+    background-image: url(xmas\,fon.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif; */
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+
+.batyrmalar{
+    display: flex;
+    column-gap: 200px;
+    
+}
+
+.batyrma{
+    text-decoration: none;
+    color: rgb(198, 10, 10);
+    font-size: 20px;
+
+}
+
+.batyrma:hover{
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #efe8e845;
+}
+
+
+
+.uakyt-zhasau{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 80px;
+}
+
+.uakyt{
+    position: relative;
+    display: block;
+    padding: 60px 30px;
+}
+
+.uakyt h1{
+    font-size: 50px;
+    color: #fff;
+    font-family: "Caveat", serif;
+}
+
+.taimer-zhasau {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.taimer{
+    padding: 20px;
+    margin: 20px;
+}
+
+.taimer p{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.taimer-zhasau h2{
+    font-size: 33px;
+}
+
+
+
