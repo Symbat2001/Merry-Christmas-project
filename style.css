@@ -42,7 +42,7 @@ body {
 }
 
 header {
-  background-image: url("images/xmas.jpeg");
+  background: url('images/xmas.jpeg');
   height: 100vh;
   background-size: cover;
   background-position: center;
