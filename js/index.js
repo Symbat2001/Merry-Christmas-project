@@ -10,23 +10,22 @@ for (let i = 0; i < 50; i++){
 
 
 
+
+
+
+
 const day = document.getElementById("day")
 const hrs = document.getElementById("hrs")
 const min = document.getElementById("min")
 const sec = document.getElementById("sec")
 
 const currentYear = new Date().getFullYear()
-console.log(currentYear);
-
-
 const newYear = new Date(`1 Jan ${currentYear + 1} 00:00:00`)
-console.log(newYear);
+
 
 function taimer() {
     const todayDate = Date.now()
-    console.log(todayDate);
     const kunder = newYear - todayDate
-    console.log(kunder);
     const kun = Math.floor(kunder / 1000 / 60 / 60 / 24)
     const sagat = Math.floor((kunder / 1000 / 60 / 60) % 24)
     const minuty = Math.floor((kunder / 1000 / 60) % 60)
@@ -38,3 +37,6 @@ function taimer() {
     sec.innerHTML = secundy < 10 ? "0" + secundy : secundy
 }
 setInterval(taimer, 1000)
+
+
+
